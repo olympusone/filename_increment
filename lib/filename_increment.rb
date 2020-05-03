@@ -18,7 +18,6 @@ class FilenameIncrement
     @start = @options[:start] || 1
 
     @file = parse(filepath)
-    puts @file
 
     if @start == 1 && (@platform == 'win32' || @platform == 'windows')
       @start += 1
